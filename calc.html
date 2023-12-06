@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="script_calc.js"></script>
+	<title>Математический калькулятор</title>
+	<script src="index.js"></script>
+	<script src="script_calc.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1 class="head_name">Математический калькулятор</h1>
+	<div class="container" id="cont_wider">
+		<div class="calc">
+			<input class="js-number-a" type="number">
+			<select class="js-selection">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<input class="js-number-b" type="number">
+			<button class="js-btn-result" onclick="calculator()">Результат</button>
+			<p id="js-output"></p>
+			</div>
+	</div>
+	
+	<div class="navigation_buttons">
+		<div class="button"><a href="calc_fig.html">Назад</a></div>
+		<div class="button"><a href="main.html">Главная страница</a></div>
+		<div class="button"><a href="guess_number.html">Далее</a></div>
+	</div>
+</body>
+</html>

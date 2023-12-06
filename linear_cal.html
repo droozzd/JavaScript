@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="linear_cal.js" defer></script>
+	<title>Линейный календарь</title>
+	<link rel="stylesheet" href="style.css">
+	<style> 
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+	#list {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#list li {
+		margin-right: 4px;
+	}
+
+	.marker {
+		background-color: chartreuse;
+	}
+
+	.left,
+	.right {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-color: chartreuse;
+		text-align: center;
+		cursor: pointer;
+		font-size: 25px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.container {
+		width: 60%;
+		font-size: 1.2em;
+	}
+	</style>
+</head>
+<body>
+
+	<h1 class="head_name">Линейный календарь</h1>
+	<div class="container">
+		<div class="wrapper">
+			<div class="info"></div>
+			<div class="nav">
+				<buton class="left">&lsaquo;</buton>
+				<buton class="right">&rsaquo;</buton>
+			</div>
+			<ul id="list">
+
+			</ul>
+		</div>
+	</div>
+	
+
+	<div class="navigation_buttons">
+		<div class="button"><a href="guess_cell.html">Назад</a></div>
+		<div class="button"><a href="main.html">Главная страница</a></div>
+		<div class="button"><a href="tabs.html">Далее</a></div>
+	</div>
+</body>
+</html>

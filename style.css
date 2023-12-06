@@ -1,0 +1,487 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,strong {
+  font-weight: bolder;
+}
+code,kbd,samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub,sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+button,input,optgroup,select,textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,input {
+  overflow: visible;
+}
+button,select {
+  text-transform: none;
+}
+button,[type="button"],[type="reset"],[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-position: center center;
+  vertical-align: middle;
+}
+.menu_header {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu_header li {
+  display: block;
+  list-style-type: none;
+  text-align: left;
+  padding-top: 15px;
+
+}
+
+.menu_header li{
+  display: block;
+  margin-left: 20px;
+  margin-right: 0;
+  text-align: center;
+  background-color: #BAFF39;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  border-radius: 30px;
+  width: 80%;
+  padding-bottom: 15px;
+}
+li a {
+  color: #000;
+}
+a {
+  color: #BAFF39;
+  text-decoration: none;
+  transition: 0.7s;
+  cursor: pointer;
+
+}
+a:hover {
+  color: #62E0E3;
+}
+
+.navig {
+  text-align: center;
+  display: block;
+}
+
+.button {
+  border: #62E0E3 1px solid;
+  border-radius: 20px;
+  padding: 0.7em;
+  display: inline;
+  text-align: center;
+  background-color: #6E6E6E;
+  cursor: pointer;
+
+
+}
+.navigation_buttons {
+  display: block;
+  text-align: center;
+  padding-top: 10%;
+}
+.calc {
+  text-align: center;
+  margin-top: 10%;
+}
+.calc div{
+  margin: 10px;
+}
+h1.head_name{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5%;
+  margin-bottom: 0px;
+  padding: auto;
+  color: #62E0E3;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.container {
+  display: block;
+  width: 30%;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6E6E6E;
+  padding: 1rem;
+  margin-top: 5%;
+}
+.container input, button {
+  border-radius: 20px;
+  border: none;
+  padding: 0.7em;
+}
+button{
+  background-color: #BAFF39;
+  cursor: pointer;
+
+}
+/* скрываем все input[type="radio"], расположенные в .tab
+  .tab > input[type="radio"] {
+    display: none;
+  }
+
+  /* скрываем все .tab-content */
+  .tab-content {
+    display: none;
+  }
+
+  /* отображаем только тот контент, который соответствует отмеченной радоикнопки */
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2,
+  #tab-btn-3:checked~#content-3 {
+    display: block;
+  }
+  .tab {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.tab > input[type="radio"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.tab > label {
+  display: block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  text-decoration: none;
+  color: #BAFF39;
+  border: 0;
+  border-radius: 0.375rem;
+  background: 0 0;
+}
+
+.tab > input[type="radio"]:checked + label {
+  cursor: default;
+  color: #000;
+  background-color: #BAFF39;
+}
+.tab .tab-content {
+  text-align: left;
+}
+
+
+
+.calendar-wrapper {
+  width: 360px;
+  margin: 1em auto;
+  padding: 2em;
+  border: 1px solid #dcdcff;
+  border-radius: 10px;
+  background: #fff;
+}
+table {
+  clear: both;
+  width: 100%;
+  border: 1px solid #dcdcff;
+  border-radius: 3px;
+  border-collapse: collapse;
+  color: #444;
+}
+td {
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #dcdcff;
+  border-top: 1px solid #dcdcff;
+  width: 14.28571429%;
+}
+thead td {
+  border: none;
+  color: #28283b;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+td.not-current {
+  color: #c0c0c0;
+}
+td.today {
+  font-weight: 500;
+  color: #28283b;
+  font-size: 1.5em;
+}
+#btnPrev {
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  margin-bottom: 20px;
+}
+#btnPrev:before {
+  padding-right: 4px;
+}
+#btnNext {
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+  margin-bottom: 20px;
+}
+#btnNext:after {
+  padding-left: 4px;
+}
+#divCal {
+  margin-top: 20px;
+}
+#btnPrev,
+#btnNext {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #c0c0c0;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+#btnPrev:hover,
+#btnNext:hover {
+  color: #28283b;
+  font-weight: 500;
+}
+#last_nav {
+  margin-top: 0;
+  padding-top: 2.5%;
+}
+#cont_wider {
+  width: 40%;
+}
+.js-selection {
+  padding: 8px;
+  border-radius: 20px;
+}
+#table_guess_cell {
+  width: 80%;
+  /* display: none; */
+}
+
+
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 90%;
+}
+
+td {
+  border: 1px solid black;
+  cursor: pointer;
+  width: 10%;
+}
+
+.highlight {
+  background-color: #BAFF39;
+}
+#new_game {
+  text-align: center;
+}
+
+
+
+
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#menu {
+  width: 20%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+#notes {
+  padding: 0;
+  margin: 0;
+}
+
+#notes li {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px dashed gray;
+  list-style-type: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#notes span{
+  display: inline-block;
+  color: red;
+  margin-left: 50px;
+}
+
+/* #notes li:hover,
+#notes li.active {
+  background: #f1f1f1;
+} */
+
+
+#notebook_cont {
+  width: 60%;
+}
+#create button {
+  width: 100%;
+  text-align: center;
+}
+
+#text textarea {
+  width: 100%;
+  height: 10rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#text button {
+  width: 40%;
+  height: 3rem;
+}
+
+
+.message{
+  font-size: 3rem;
+  color: red;
+  font-weight: 600;
+  display: none;
+}
